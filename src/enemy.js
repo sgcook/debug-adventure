@@ -19,8 +19,7 @@ Enemy.prototype._describeAttack = function (target) {
 };
 
 Enemy.prototype.attack = function (target) {
-  console.log(target);
-  target._takeDamage(target.damage);
+  target._takeDamage(this.damage);
   return this._describeAttack(target);
 };
 
